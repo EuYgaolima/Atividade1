@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main()
+{
+    int dado1, dado2, dado3, maior=0, menor=999999; 
+    
+    printf("usuario insira o dado 1\n");
+    scanf("%d", &dado1);
+    
+    
+    printf("usuario insira o dado 2\n");
+    scanf("%d", &dado2);
+    
+    printf("usuario insira o dado 3\n");
+    scanf("%d", &dado3);
+    
+    if (maior<dado1){
+        maior=dado1;
+    } 
+    if (maior<dado2){
+        maior=dado2;
+    }  
+    if (maior<dado3){
+        maior=dado3;
+    }
+    
+    if (menor>dado1){
+        menor=dado1;
+    }
+    if (menor>dado2){
+        menor=dado2;
+    
+    }
+    if (menor>dado3){
+        menor=dado3;
+    }
+    
+    printf("maior:%d\nmenor:%d",maior,menor);
+    
+    
+    return 0;
+}
